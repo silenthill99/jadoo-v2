@@ -104,6 +104,12 @@ h1 {
     border-radius: 24px;
     width: 315px;
     height: 457px;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.liste li:hover {
+    transform: scale(1.05);
 }
 
 .liste li img {
