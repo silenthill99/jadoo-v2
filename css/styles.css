@@ -128,3 +128,7 @@ h1 {
     font-size: 18px;
     color: #5E6282;
 }
+
+.logo:hover img {
+    opacity: 0.7;
+}
