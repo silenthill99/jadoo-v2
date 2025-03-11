@@ -147,7 +147,8 @@ h1 {
     list-style-type: none;
     justify-content: space-around;
     width: 100%;
-    margin-top: 80px;
+    margin-block: 80px;
+
 }
 
 .maki li {
@@ -176,7 +177,8 @@ h1 {
 
 .maki li:hover {
     transform: scale(1.1);
-    border-color: black;
+    -webkit-box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     background-color: #fff;
 }
 
