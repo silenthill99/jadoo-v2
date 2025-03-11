@@ -1,6 +1,8 @@
-const btn = document.querySelector(".discover") as HTMLButtonElement
+const btns = document.querySelectorAll(".discover") as NodeListOf<HTMLButtonElement>
 
-btn.addEventListener("click", function(event) {
-    event.preventDefault()
-    alert("Commande passée !")
+btns.forEach(btn => {
+    btn.addEventListener("click", (event) => {
+        event.preventDefault()
+        alert("Commande passée !")
+    })
 })
