@@ -11,6 +11,10 @@ header {
 h1 {
     font-family: Volkhov, sans-serif;
     font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -4px;
+    color: #fafafa;
 }
 
 .menu-nav ul {
@@ -47,9 +51,6 @@ h1 {
 }
 
 .welcome {
-    font-size: 84px;
-    line-height: 89px;
-    letter-spacing: -4px;
     width: 520px;
 }
 
@@ -191,6 +192,7 @@ h1 {
 }
 
 #decouvrir {
+    position: relative;
     height: 1764px;
     background: url("../images/chef.png") fixed center;
     background-size: cover;
@@ -233,4 +235,30 @@ img[alt="Ellipse"], img[alt="Vector"] {
 
 .top:active {
     box-shadow: inset 0 5px 2px;
+}
+
+#decouvrir h1 {
+    padding-block: 20px;
+    width: 612px;
+}
+
+.galerie {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateY(-90%);
+}
+
+.galerie img {
+    width: 100%;
+    height: 653px;
+    object-fit: cover;
+}
+
+#commandez {
+    height: 928px;
+    background: url("../images/blanc.jpg") fixed center;
+    padding-top: 15%;
 }
