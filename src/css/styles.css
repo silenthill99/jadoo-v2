@@ -2,6 +2,11 @@ main {
     font-family: Poppins, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -14,12 +19,12 @@ h1 {
     font-size: 84px;
     line-height: 89px;
     letter-spacing: -4px;
-    color: #fafafa;
 }
 
 .menu-nav ul {
     font-family: Arial, serif;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 10px;
 }
@@ -40,6 +45,7 @@ h1 {
     letter-spacing: 0;
     text-transform: uppercase;
     color: #DF6951;
+
 }
 
 .main {
@@ -84,7 +90,7 @@ h1 {
 
 #nouveautes {
     padding: 5rem;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
 }
@@ -100,10 +106,14 @@ h1 {
     font-size: 50px;
 }
 
+
 .liste {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    justify-content: center;
     list-style-type: none;
+    margin: 50px;
+    padding: 0;
     gap: 80px;
 }
 
@@ -111,11 +121,11 @@ h1 {
     -webkit-box-shadow: 0 10px 13px -7px #000000, 8px 8px 36px 0 rgba(0,0,0,0);
     box-shadow: 0 10px 13px -7px #000000, 8px 8px 36px 0 rgba(0,0,0,0);
     border-radius: 24px;
-    width: 315px;
     height: 457px;
     transition-duration: 300ms;
     cursor: pointer;
     background-color: #fff;
+    justify-content: center;
 }
 
 .liste li:hover {
@@ -123,7 +133,7 @@ h1 {
 }
 
 .liste li img {
-    width: 315px;
+    width: 100%;
     height: 327px;
     border-radius: 24px 24px 0 0;
     object-fit: cover;
@@ -147,6 +157,7 @@ h1 {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     margin-block: 80px;
 
@@ -219,7 +230,7 @@ img[alt="Ellipse"], img[alt="Vector"] {
 .top {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 20px;
     padding: 5px;
     background: #fafafa;
     color: black;
@@ -238,6 +249,7 @@ img[alt="Ellipse"], img[alt="Vector"] {
 }
 
 #decouvrir h1 {
+    color: #fafafa;
     padding-block: 20px;
     width: 612px;
 }
@@ -260,5 +272,52 @@ img[alt="Ellipse"], img[alt="Vector"] {
 #commandez {
     height: 928px;
     background: url("../images/blanc.jpg") fixed center;
-    padding-top: 15%;
+    background-size: cover;
+    padding: 10%;
+}
+
+#commandez .commandez-main {
+    width: 395px;
+    height: 434px;
+}
+
+.rapide {
+    font-weight: 600;
+    font-size: 18px;
+    horiz-align: center;
+    text-transform: uppercase;
+    color: #5E6282;
+}
+
+#commandez h1 {
+    font-size: 50px;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 100%;
+    color: #DF6951
+}
+
+#commandez h1 span {
+    color: #14183E
+}
+
+.infos {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 122px 1fr;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.infos img {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+.name {
+    padding: 0;
+    margin-block: 0;
+    font-weight: bold;
 }
