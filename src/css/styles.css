@@ -8,6 +8,7 @@ main {
 }
 
 header {
+    margin: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -112,7 +113,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
     justify-content: center;
     list-style-type: none;
-    margin: 50px;
+    margin: 200px;
     padding: 0;
     gap: 80px;
 }
@@ -204,7 +205,7 @@ h1 {
 
 #decouvrir {
     position: relative;
-    height: 1764px;
+    height: 1600px;
     background: url("../images/chef.png") fixed center;
     background-size: cover;
     padding: 159px;
@@ -270,7 +271,7 @@ img[alt="Ellipse"], img[alt="Vector"] {
 }
 
 #commandez {
-    height: 928px;
+    height: 550px;
     background: url("../images/blanc.jpg") fixed center;
     background-size: cover;
     padding: 10%;
@@ -278,7 +279,7 @@ img[alt="Ellipse"], img[alt="Vector"] {
 
 #commandez .commandez-main {
     width: 395px;
-    height: 434px;
+    min-height: 434px;
 }
 
 .rapide {
@@ -302,7 +303,7 @@ img[alt="Ellipse"], img[alt="Vector"] {
 }
 
 .infos {
-    margin-top: 80px;
+    margin-block: 80px;
     display: grid;
     grid-template-columns: 122px 1fr;
     row-gap: 30px;
@@ -312,12 +313,8 @@ img[alt="Ellipse"], img[alt="Vector"] {
 .infos img {
     display: block;
     margin: auto;
-    object-fit: cover;
 }
 
-
 .name {
-    padding: 0;
-    margin-block: 0;
     font-weight: bold;
 }
