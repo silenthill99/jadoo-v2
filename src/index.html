@@ -21,7 +21,7 @@
             <li><a href="#nouveautes">Les nouveautés</a></li>
             <li><a href="#decouvrir">Découvrir</a></li>
             <li><a href="#commandez">Commander</a></li>
-            <li><a href="">Contactez-nous</a></li>
+            <li><a href="#contact">Contactez-nous</a></li>
         </ul>
     </nav>
 </header>
@@ -127,6 +127,41 @@
             <button class="discover">
                 Découvrir la carte
             </button>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="rapide">Prendre Rendez-vous</p>
+        <h1>Contactez-nous<br>pour réserver au restaurant</h1>
+        <div class="form">
+            <div>
+                <h3>Formulaire de contact</h3>
+                <p class="info-form">Remplissez le formulaire ci-dessous pour nous contacter</p>
+                <form method="post">
+                    <div>
+                        <label for="name">
+                            <span>Prénom</span><br>
+                            <input type="text" id="name" placeholder="Votre prénom">
+                        </label>
+                        <label>
+                            <span>Nom</span>
+                            <input type="text" placeholder="Votre nom">
+                        </label>
+                    </div>
+                    <label for="email">
+                        <span>Adresse e-mail</span>
+                        <input type="email" id="email" placeholder="@">
+                    </label>
+                    <label for="message">
+                        <span>Message</span><br>
+                        <textarea id="message" style="resize: none" cols="33" rows="10"></textarea>
+                    </label>
+                    <button type="submit">
+                        <img id="validate" src="images/validate.svg" alt="Validate">
+                        <span>Envoyer</span>
+                    </button>
+                </form>
+            </div>
+            <img src="images/Plat.jpg" alt="Plat">
         </div>
     </section>
     <a class="top" href="#top">
