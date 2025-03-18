@@ -1,10 +1,8 @@
-main {
-    font-family: Poppins, sans-serif;
-}
 
 * {
     margin: 0;
     padding: 0;
+    font-family: Poppins, sans-serif;
 }
 
 header {
@@ -326,20 +324,22 @@ img[alt="Ellipse"], img[alt="Vector"] {
 
 #contact {
     text-align: center;
-    padding: 10%;
+    padding: 5%;
 }
 
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -webkit-box-shadow: 0 0 15px 1px #575757;
-    box-shadow: 0 0 15px 1px #575757;
+    box-shadow: 0 4px 61px 0 #0000001A;
     border-radius: 20px;
     text-align: left;
+    width: 75%;
+    margin: 4rem auto auto;
 }
 
 .form > div {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .form img {
@@ -426,4 +426,67 @@ form button span {
     line-height: calc(19.5rem/16);
     letter-spacing: 0;
     color: #8D8D8D;
+}
+
+#contact > h1 {
+    color: #14183E;
+}
+
+footer {
+    height: calc(386.7890625rem/16);
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.main-footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    color: #5E6282
+}
+
+.main-footer figcaption {
+    width: 297px;
+}
+
+.mentions-legales {
+    height: calc(17rem/16);
+    font-weight: 500;
+    font-size: calc(14rem/16);
+    line-height: 125%;
+    letter-spacing: 0;
+    color: #5E6282;
+    padding-block: calc(20rem/16);
+}
+
+.footer-infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.footer-infos ul {
+    list-style: none;
+}
+
+.footer-infos a {
+    text-decoration: none;
+    color: #5E6282;
+}
+
+.footer-infos a:hover {
+    text-decoration: underline;
+}
+
+.footer-infos h4 {
+    color: #080809
+}
+
+.uber-eats img {
+    width: 200px;
 }
