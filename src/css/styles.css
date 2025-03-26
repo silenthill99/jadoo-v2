@@ -150,6 +150,12 @@ h1 {
     color: #5E6282;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .logo:hover img {
     opacity: 0.7;
 }
@@ -288,6 +294,8 @@ img[alt="Ellipse"], .video svg {
     horiz-align: center;
     text-transform: uppercase;
     color: #5E6282;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
 #commandez h1 {
@@ -587,8 +595,10 @@ footer {
     font-family: "Volkhov", serif;
 }
 
-.mobile-only {
-    display: none;
+.figure-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 @media(width < 40rem) {
@@ -709,6 +719,7 @@ footer {
 
     #decouvrir {
         padding: 0;
+        min-height: 1000px;
     }
 
     .video {
@@ -742,10 +753,7 @@ footer {
     }
 
     .galerie {
-        position: static;
-        padding-top: 30rem;
-        grid-template-columns: 1fr;
-        transform: none;
+        display: none;
     }
 
     #commandez {
@@ -791,10 +799,6 @@ footer {
         height: 51px;
     }
 
-    .mobile-only {
-        display: block;
-    }
-
     .mobile-hide {
         display: none;
     }
@@ -803,6 +807,7 @@ footer {
         margin: 0;
         width: 100%;
         box-shadow: none;
+        grid-template-columns: 1fr;
         gap: 0;
     }
 
@@ -812,11 +817,42 @@ footer {
 
     .form div {
         display: block;
-        width: 100%
+        width: 100%;
+        padding: 0;
+    }
+
+    .form h3 {
+        display: none;
+    }
+
+    .info-form {
+        margin: auto;
+        padding-top: 0;
+        text-align: center;
+    }
+
+
+    .main-footer {
+        padding-top: 5rem;
     }
 
     .main-footer figure {
         align-self: end;
         order: 2;
+        background: white;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .uber-eats {
+        padding-bottom: 3rem;
+    }
+
+    .logo-ue {
+        margin: auto;
+    }
+
+    .mentions-legales {
+        display: none;
     }
 }
